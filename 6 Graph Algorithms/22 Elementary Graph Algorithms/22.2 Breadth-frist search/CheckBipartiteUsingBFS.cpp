@@ -14,8 +14,6 @@
 using namespace std;
 // Check if graph is Bipartite using BFS
 
-enum colors {BLUE,RED};
-
 bool BFSBipartite(vector <int>adj[],int s,int v)
 {
 	bool visited[v];
@@ -71,7 +69,7 @@ int main(int argc, char const *argv[])
 	addEdge(adj, 2, 4);
 	addEdge(adj, 2, 5);
 
-	
+
 	BFSBipartite(adj,0,v) ?cout<<"yes\n" :cout<<"No\n";
 
 	return 0;
